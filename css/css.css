@@ -165,8 +165,9 @@ header ul li a:hover{
 }
 .section .cont{
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(373px, 1fr));
     padding-top: 50PX;
+    row-gap: 1.5rem;
     
 }
 .cont .off  .img img{
@@ -255,7 +256,7 @@ header ul li a:hover{
     justify-content: center;
 }
 .app .img img{
-    width: 375px;
+    width: 50%;
 }
 .app .box .photos img{
     width: 190px;
@@ -378,6 +379,7 @@ header ul li a:hover{
         justify-content: center;
     }
 }
+
 @media(max-width:767px){
     .home{
         text-align: center;
@@ -400,6 +402,17 @@ header ul li a:hover{
     }
     .about .container .img{
         margin-bottom: 25px;
+    }
+    .app .box .photos .img1{
+        margin-right: 0px !important;
+        margin-bottom: 1rem;
+    }
+    .app .img img{
+        width: 70% !important;
+    }.cont{
+        display: flex !important;
+        flex-direction: column !important;
+        
     }
 }
 
